@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calcium disorders slides</title>
+  <style>
+    :root {
+      --bg: #0f1720;
+      --card: #1a2430;
+      --text: #e8eef4;
+      --muted: #9aabbc;
+      --accent: #3d8bfd;
+      --accent2: #2bb673;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1e3a5f 0%, transparent 55%),
+                  radial-gradient(900px 500px at 100% 0%, #163528 0%, transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      width: min(520px, 100%);
+      background: color-mix(in srgb, var(--card) 92%, black);
+      border: 1px solid #2a3a4c;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+    h1 {
+      margin: 0 0 .4rem;
+      font-size: 1.45rem;
+      letter-spacing: -.02em;
+    }
+    p {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: .95rem;
+    }
+    .actions {
+      display: grid;
+      gap: .75rem;
+    }
+    a.btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: .95rem 1rem;
+      border-radius: 10px;
+    }
+    a.pdf { background: var(--accent); }
+    a.pptx { background: var(--accent2); }
+    a.btn:hover { filter: brightness(1.08); }
+    .hint {
+      margin-top: 1.25rem;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hypo / Hypercalcemia slides</h1>
+    <p>Educational deck (Harrison approach synthesis). Download either file below.</p>
+    <div class="actions">
+      <a class="btn pdf" href="hypo-hypercalcemia-harrison-approach.pdf" download>Download PDF (39 pages)</a>
+      <a class="btn pptx" href="hypo-hypercalcemia-harrison-approach.pptx" download>Download PowerPoint</a>
+    </div>
+    <p class="hint">If the download does not start, long-press / right-click the button and choose Save link as.</p>
+  </main>
+</body>
+</html>
